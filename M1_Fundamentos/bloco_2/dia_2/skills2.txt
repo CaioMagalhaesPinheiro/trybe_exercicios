@@ -7,3 +7,5 @@ React
 Phython
 C+
 CSS
+Soft skills
+Github
