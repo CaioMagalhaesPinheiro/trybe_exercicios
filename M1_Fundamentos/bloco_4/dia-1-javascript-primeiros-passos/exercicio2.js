@@ -1,5 +1,5 @@
-let num1 = 32
-let num2 = 45
+let num1 = 32;
+let num2 = 45;
 let comparaçao
 
 if (num1 > num2) {
