@@ -4,7 +4,14 @@ seja n > 1 , imprima na tela um quadrado feito de asteriscos de lado de tamanho 
 let n = 5;
 let linhaAsteristico = "";
 
-for (let index = 1; index <= n; index += 1) {
-    linhaAsteristico = linhaAsteristico + "*";
-    console.log(linhaAsteristico)   
-}
+if (n <= 1) {
+  console.log("Número inválido.")
+} else {
+    for (let index = 0; index <= n; index += 1) {
+      linhaAsteristico = "";
+      for (let linha = 0; linha <= n; linha += 1) {
+          linhaAsteristico += "*";
+        }        
+        console.log(linhaAsteristico)                   
+      } 
+    }
