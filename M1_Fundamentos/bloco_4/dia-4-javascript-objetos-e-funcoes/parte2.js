@@ -89,15 +89,32 @@ console.log(maxStringInArray(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', '
 Array de teste: [2, 3, 2, 5, 8, 2, 3]; .
 Valor esperado no retorno da função: 2 . */
 
-function moda() {
+function moda(array) {
 
 	let numeroAtual = array[0];
+	let numeroVezes = 0;
+	let numeroVezesMaisRepetido = 0;
+	let numeroMaisRepetido = array[0];
 
 	for (let mudancaDeNum = 0; mudancaDeNum < array.length; mudancaDeNum += 1) {
-		numeroAtual
+		numeroAtual = array[mudancaDeNum];
+		for (let comparacao = 0; comparacao < array.length; comparacao += 1) {
+			if (numeroAtual === array[comparacao]) {
+				numeroVezes += 1;
+				if (numeroVezes > numeroVezesMaisRepetido) {
+					numeroVezesMaisRepetido = numeroVezes;
+					numeroMaisRepetido = numeroAtual;
+				}
+			}
+
+		}
+		numeroVezes = 0;
+
 	}
+	return numeroMaisRepetido
 }
 
+console.log(moda([2, 3, 2, 5, 8, 2, 3]))
 
 
 
