@@ -42,7 +42,35 @@
       </section>
     </main>
     <script>
-      document.getElementsByTagName('p')[0].innerText = 'Daqui a dois anos eu me vejo dois anos mais velho.';
+      const paragrafos = document.getElementsByTagName('p');
+      const background = document.getElementsByClassName('main-content');
+      const backgroundCenter = document.getElementsByClassName('center-content');
+      const title = document.getElementsByTagName('h1');
+
+      function changeText(element, texto) {
+        element.innerText = texto;
+      }
+      changeText(paragrafos[0], 'Daqui a dois anos eu me vejo dois anos mais velho.');
+      changeText(title[0], 'Exercício 5.1 - JavaScript');
+      
+      function changeBGColor(element, color) {
+        element.style.backgroundColor = color;
+      }
+      changeBGColor(background[0], 'rgb(76,164,109)');
+      changeBGColor(backgroundCenter[0], 'rgb(250,250,250)');
+
+      function descriptionUpperCase(paragrafo) {
+        paragrafo.innerText = paragrafo.innerText.toUpperCase(); 
+      } 
+      descriptionUpperCase(paragrafos[0]);
+
+      function print(element) {
+        console.log(element);
+      }
+      print(paragrafos[0]);
+      print(paragrafos[1]);
+      print(paragrafos[2]);
+      
         /*
         Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
         - document.getElementById()
