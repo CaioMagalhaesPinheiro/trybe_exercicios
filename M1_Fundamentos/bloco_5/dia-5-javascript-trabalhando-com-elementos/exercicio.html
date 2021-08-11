@@ -60,6 +60,7 @@
       let body = document.querySelector('body');
       let h1 = document.createElement('h1');
       h1.innerText = 'Exercício 5.2 - JavaScript DOM';
+      h1.className = 'title';
       
       body.appendChild(h1);
 
@@ -113,6 +114,7 @@
         let h3 = highlights[index];
         let highlight = document.createElement('h3');
         highlight.innerText = h3;
+        highlight.className = 'description';
         
         main.appendChild(highlight);
       }
