@@ -98,6 +98,7 @@
       sectionLeft.appendChild(imagem);
 
       let list = document.createElement('ul');
+      list.className = 'lista-numerica';
 
       sectionRight.appendChild(list);
 
@@ -110,6 +111,8 @@
         
         list.appendChild(listItem);
       }
+      list.removeChild(list.lastChild);
+      list.removeChild(list.lastChild);      
 
       let highlights = ['Highlight 1', 'Highlight 2', 'Highlight 3'];
 
