@@ -9,3 +9,26 @@ function putState() {
     selectState.appendChild(stateItem);
   }
 } putState();
+
+
+function validarData() {
+  const data = document.getElementById('date').value;
+  const dataSeparada = data.split('/');
+  
+  let dia = dataSeparada[0];
+  let mes = dataSeparada[1];
+  let ano = dataSeparada[2];
+  
+  let diaValido = dia > 0 && dia <= 31;
+  let mesValido = mes > 0 && mes <= 12;
+  let anoValido = ano > 0;
+  
+  if (!diaValido || !mesValido || !anoValido) {
+    alert('Erro na data');  
+  }
+}
+
+const button = document.getElementById('teste');
+button.addEventListener('click', function() {
+  validarData();  
+});
