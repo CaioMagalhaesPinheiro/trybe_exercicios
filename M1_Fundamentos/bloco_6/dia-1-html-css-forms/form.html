@@ -9,66 +9,72 @@
 </head>
 <body>
 
-  <fieldset>
-    <div>
-      <label for="name">Nome:</label>
-      <input type="text" id="name" required maxlength="40">
-    </div>
+  <form action="">
     
-    <div>
-      <label for="email">Email:</label>
-      <input type="email" id="email" required maxlength="50">
-    </div>
+      <fieldset>
+        <div>
+          <label for="name">Nome:</label>
+          <input type="text" id="name" required maxlength="40">
+        </div>
+        
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" id="email" required maxlength="50">
+        </div>
+    
+        <div>
+          <label for="CPF">CPF:</label>
+          <input type="text" id="CPF" required maxlength="11">
+        </div>
+    
+        <div>
+          <label for="end">Endereço:</label>
+          <input type="text" id="end" required maxlength="200">
+        </div>
+    
+        <div>
+          <label for="city">Cidade:</label>
+          <input type="text" id="city" required maxlength="28">
+        </div>
+    
+        <div>
+          <label for="state">Estado</label>
+          <select name="state" id="state" required></select>
+        </div>
+    
+        <div>
+          <label for="casa"><input type="radio" name="home" id="casa" value="casa" required>Casa</label>
+          <label for="ap"><input type="radio" name="home" id="ap" value="ap">Apartamento</label>
+        </div>
+    
+      </fieldset>
+    
+      <fieldset>
+        <div>
+          <label for="resume">Resumo do currículo</label>
+          <textarea name="resume" id="resume" cols="30" rows="10" required maxlength="1000"></textarea>
+        </div>
+    
+        <div>
+          <label for="role">Cargo:</label>
+          <input type="text" id="role" required maxlength="40">
+        </div>
+    
+        <div>
+          <label for="description">Descrição do cargo:</label>
+          <input type="text" id="description" required maxlength="500">
+        </div>
+    
+        <div>
+          <label for="date">Data de início:</label>
+          <input type="text" id="date" maxlength="10" required>
+        </div>
+        
+      </fieldset>
 
-    <div>
-      <label for="CPF">CPF:</label>
-      <input type="text" id="CPF" required maxlength="11">
-    </div>
+      <button id="submit" type="submit">Enviar</button>
 
-    <div>
-      <label for="end">Endereço:</label>
-      <input type="text" id="end" required maxlength="200">
-    </div>
-
-    <div>
-      <label for="city">Cidade:</label>
-      <input type="text" id="city" required maxlength="28">
-    </div>
-
-    <div>
-      <label for="state">Estado</label>
-      <select name="state" id="state" required></select>
-    </div>
-
-    <div>
-      <label for="casa"><input type="radio" name="home" id="casa" value="casa" required>Casa</label>
-      <label for="ap"><input type="radio" name="home" id="ap" value="ap">Apartamento</label>
-    </div>
-
-  </fieldset>
-
-  <fieldset>
-    <div>
-      <label for="resume">Resumo do currículo</label>
-      <textarea name="resume" id="resume" cols="30" rows="10" required maxlength="1000"></textarea>
-    </div>
-
-    <div>
-      <label for="role">Cargo:</label>
-      <input type="text" id="role" required maxlength="40">
-    </div>
-
-    <div>
-      <label for="description">Descrição do cargo:</label>
-      <input type="text" id="description" required maxlength="500">
-    </div>
-
-    <div>
-      <label for="date">Data de início:</label>
-      <input type="text" id="date" maxlength="10" required>
-    </div>
-
-  </fieldset>
+  </form>
 
   <script src="script.js"></script>
   

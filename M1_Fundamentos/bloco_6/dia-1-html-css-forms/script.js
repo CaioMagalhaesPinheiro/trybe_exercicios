@@ -28,7 +28,9 @@ function validarData() {
   }
 }
 
-const button = document.getElementById('teste');
-button.addEventListener('click', function() {
+const button = document.getElementById('submit');
+button.addEventListener('click', function(event) {
+  event.preventDefault();
   validarData();  
 });
+
