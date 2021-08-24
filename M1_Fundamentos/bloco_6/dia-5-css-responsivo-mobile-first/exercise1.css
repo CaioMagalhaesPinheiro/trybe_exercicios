@@ -18,3 +18,26 @@ img {
 figure {
     margin: 0;
 }
+
+@media screen and (min-width: 768px) {
+  body {
+    background-color: cadetblue;
+    font-size: x-large;
+    margin: 20px;
+  }
+
+  h1 {
+    font-size: xx-large;
+  }
+
+  .imagens-section {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .imagem {
+    width: 30%;
+    padding: 10px;
+  }
+  
+}
