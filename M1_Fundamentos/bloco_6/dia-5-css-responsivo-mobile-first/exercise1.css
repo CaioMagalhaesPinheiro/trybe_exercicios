@@ -41,3 +41,16 @@ figure {
   }
   
 }
+
+@media screen and (min-width: 1200px) {
+  body {
+    background-color: burlywood;
+    font-size: xx-large;
+    margin: 30px;
+    max-width: 90%;
+  }
+
+  h1 {
+    font-size: 80px;
+  }
+}
