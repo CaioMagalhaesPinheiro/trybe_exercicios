@@ -68,4 +68,12 @@ li {
   .main-content p {
     font-size: large;
   }
+
+  .rodape {
+    margin: 5%;    
+  }
+
+  .rodape p {
+    margin: 10px;
+  }
 }
