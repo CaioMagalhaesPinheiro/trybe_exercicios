@@ -123,16 +123,17 @@ li {
   }
 
   .main-content {
-    margin: 20px;
+    margin: 50px;
   }
 
   .main-content  h1 {
     font-size: xx-large;
     text-align: center;
+    padding: 25px;
   }
 
   .main-content p {
-    font-size: large;
+    font-size: x-large;
   }
 
   .rodape {
