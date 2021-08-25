@@ -1,0 +1,41 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+li {
+  list-style-type: none;
+}
+
+.aside-two ul li {
+  list-style-type: circle;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    background-color: grey;
+  }
+  
+  .top {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .top p {
+    font-size: x-large;
+    font-weight: bold;
+  }
+
+  .top nav {
+    font-size: small;
+    padding: 15px;
+  }
+  
+  .top nav ul li {
+    padding: 2.5px;
+  }
+
+  
+}
