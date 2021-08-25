@@ -15,7 +15,7 @@ li {
 
 @media screen and (max-width: 600px) {
   body {
-    background-color: grey;
+    background-color: cyan; 
   }
   
   .top {
@@ -80,7 +80,7 @@ li {
 
 @media screen and (min-width: 600px) {
   body {
-    background-color: blueviolet;
+    background-color: cornflowerblue ;
   }
   
   .top {
@@ -119,6 +119,81 @@ li {
   }
 
   .aside-two {
+    margin-left: 10%;
+  }
+
+  .main-content {
+    margin: 50px;
+  }
+
+  .main-content  h1 {
+    font-size: xx-large;
+    text-align: center;
+    padding: 25px;
+  }
+
+  .main-content p {
+    font-size: x-large;
+  }
+
+  .rodape {
+    margin: 5%;    
+  }
+
+  .rodape p {
+    margin: 10px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  body {
+    background-color: yellowgreen;
+  }
+  
+  .top {
+    display: flex;
+    flex-direction: column;
+  }  
+
+  .top p {
+    align-self: center;
+    font-size: xx-large;
+    font-weight: bold;
+  }
+
+  .top nav ul {
+    display: flex;
+    margin-left: 70%;
+  }
+
+  .top nav ul li {
+    font-size: large;
+    padding: 10px;
+  }
+
+  .asides {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .aside-one {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .aside-one h2 {
+    margin: 10px;
+  }
+
+  .aside-one ul li {
+    font-size: large;
+    padding: 5px;
+  }
+
+  .aside-two {
+    align-self: flex-end;
     margin-left: 10%;
   }
 
