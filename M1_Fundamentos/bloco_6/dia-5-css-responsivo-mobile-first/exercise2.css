@@ -37,5 +37,24 @@ li {
     padding: 2.5px;
   }
 
+  .aside-one {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .aside-one h2 {
+    margin: 10px;
+  }
+
+  .aside-one ul li {
+    font-size: large;
+    padding: 5px;
+  }
+
+  .aside-two {
+    margin-left: 10%;
+  }
+
   
 }
