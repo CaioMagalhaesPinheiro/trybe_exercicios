@@ -56,5 +56,16 @@ li {
     margin-left: 10%;
   }
 
-  
+  .main-content {
+    margin: 20px;
+  }
+
+  .main-content  h1 {
+    font-size: xx-large;
+    text-align: center;
+  }
+
+  .main-content p {
+    font-size: large;
+  }
 }
