@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <fieldset>
+    <div class="input-group mb-3">
+      <label class="input-group-text" for="name">Nome:</label>
+      <input class="form-control" type="text" id="name" required maxlength="40">
+    </div>
+    
+    <div class="input-group mb-3">
+      <label class="input-group-text" for="email">Email:</label>
+      <input class="form-control" type="email" id="email" required maxlength="50">
+    </div>
+
+    <div class="input-group mb-3">
+      <label class="input-group-text" for="CPF">CPF:</label>
+      <input class="form-control" type="text" id="CPF" required maxlength="11">
+    </div>
+
+    <div class="input-group mb-3">
+      <label class="input-group-text" for="end">Endereço:</label>
+      <input class="form-control" type="text" id="end" required maxlength="200">
+    </div>
+
+    <div class="input-group mb-3">
+      <label class="input-group-text" for="city">Cidade:</label>
+      <input class="form-control" type="text" id="city" required maxlength="28">
+    </div>
+
+    <div class="input-group mb-3">
+      <label class="input-group-text" for="state">Estado</label>
+      <select class="form-control" name="state" id="state" required></select>
+    </div>
+
+    <div class="input-group mb-3"> 
+      <label class="form-control" for="casa"><input class="form-check-input"type="radio" name="home" id="casa" value="casa" required> Casa</label>
+      <label class="form-control" for="ap"><input class="form-check-input" type="radio" name="home" id="ap" value="ap"> Apartamento</label>
+    </div>
+
+  </fieldset>
+
+  <fieldset>
+    <div class="input-group mb-3">
+      <label class="input-group-text" for="resume">Resumo do currículo</label>
+      <textarea class="form-control" name="resume" id="resume" cols="30" rows="10" required maxlength="1000"></textarea>
+    </div>
+
+    <div class="input-group mb-3">
+      <label class="input-group-text" for="role">Cargo:</label>
+      <input class="form-control" type="text" id="role" required maxlength="40">
+    </div>
+
+    <div class="input-group mb-3">
+      <label class="input-group-text" for="description">Descrição do cargo:</label>
+      <input class="form-control" type="text" id="description" required maxlength="500">
+    </div>
+
+    <div class="input-group mb-3">
+      <label class="input-group-text" for="datepicker">Data de início:</label>
+      <input class="form-control" type="text" id="datepicker" required>
+    </div>
+
+  </fieldset>
+
+  <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+  <script src="pikaday.js"></script>
+  <script src="script.js"></script>
+  
+</body>
+</html>
