@@ -58,11 +58,11 @@ console.log(getValueByNumber(lesson1, 0));
 function verify(object, chave, valor) {
   const arrayChave = Object.keys(object);
   const arrayValor = Object.values(object);
-  if (arrayChave.includes(chave) || arrayValor.includes(valor)) {
+  if (arrayChave.includes(chave) && arrayValor.includes(valor)) {
     console.log(true);
   } else {
     console.log(false);
   }
 }
-verify(lesson1, 'noite', 'turno');
+verify(lesson1, 'turno', 'noite');
 verify(lesson3, 'materia', 'Maria Clara');
