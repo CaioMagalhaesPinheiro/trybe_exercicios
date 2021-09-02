@@ -7,7 +7,7 @@ o número apostado é igual ao número sorteado. O retorno da sua HOF deve ser u
 const sorteio = (bet, callback) => {
   const randomNumber = Math.ceil(Math.random()*5)
   const message = callback(randomNumber, bet);
-  console.log(message);
+  return message
 }
 
 const checkBet = (numb1, numb2) => {
