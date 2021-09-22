@@ -1,4 +1,4 @@
-const sum = require('./exercicio1');
+const sum = require('../Exercises/exercicio1');
 
 /* A função sum(a, b) retorna a soma do parâmetro a com o b
 Teste se o retorno de sum(4, 5) é 9
