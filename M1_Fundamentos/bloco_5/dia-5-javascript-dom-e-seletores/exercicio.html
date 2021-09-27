@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.1</title>
+    
+    <style>
+      main, section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin: 0 auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <header> 
+      <h1 class="title">Exercício 5.1 - JavaEscripito </h1>
+    </header>    
+    <main class="main-content">
+      <section class="center-content">
+        <p>Texto padrão do nosso site</p>
+        <p>-----</p>
+        <p>Trybe</p>
+      </section>
+    </main>
+    <script>
+      const paragrafos = document.getElementsByTagName('p');
+      const background = document.getElementsByClassName('main-content');
+      const backgroundCenter = document.getElementsByClassName('center-content');
+      const title = document.getElementsByTagName('h1');
+
+      function changeText(element, texto) {
+        element.innerText = texto;
+      }
+      changeText(paragrafos[0], 'Daqui a dois anos eu me vejo dois anos mais velho.');
+      changeText(title[0], 'Exercício 5.1 - JavaScript');
+      
+      function changeBGColor(element, color) {
+        element.style.backgroundColor = color;
+      }
+      changeBGColor(background[0], 'rgb(76,164,109)');
+      changeBGColor(backgroundCenter[0], 'rgb(250,250,250)');
+
+      function descriptionUpperCase(paragrafo) {
+        paragrafo.innerText = paragrafo.innerText.toUpperCase(); 
+      } 
+      descriptionUpperCase(paragrafos[0]);
+
+      function print(element) {
+        console.log(element);
+      }
+      print(paragrafos[0]);
+      print(paragrafos[1]);
+      print(paragrafos[2]);      
+        
+    </script>
+  </body>
+</html>
