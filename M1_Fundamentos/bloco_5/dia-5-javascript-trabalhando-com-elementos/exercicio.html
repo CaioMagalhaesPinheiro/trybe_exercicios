@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      let body = document.querySelector('body');
+      let h1 = document.createElement('h1');
+      h1.innerText = 'Exercício 5.2 - JavaScript DOM';
+      h1.className = 'title';
+      
+      body.appendChild(h1);
+
+      let main = document.createElement('main');
+      main.className = 'main-content';
+      main.style.backgroundColor = 'rgb(15, 96, 22)';
+
+      body.appendChild(main);
+
+      let section = document.createElement('section');
+      section.className = 'center-content';
+
+      main.appendChild(section);
+
+      let p = document.createElement('p');
+      p.innerText = 'Trybe - Turma 15 - Tribo B';
+
+      section.appendChild(p);
+
+      let sectionLeft = document.createElement('section');
+      sectionLeft.className = 'left-content';
+
+      main.appendChild(sectionLeft);
+
+      let sectionRight = document.createElement('section');
+      sectionRight.className = 'right-content';
+      sectionRight.style.marginRight = 'auto';
+
+      main.appendChild(sectionRight);
+
+      let imagem = document.createElement('img');
+      imagem.src = 'https://picsum.photos/200';
+      imagem.className = 'small-image';
+
+      sectionLeft.appendChild(imagem);
+
+      let list = document.createElement('ul');
+      list.className = 'lista-numerica';
+
+      sectionRight.appendChild(list);
+
+      let number = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+
+      for (let index in number) {
+        let item = number[index];
+        let listItem = document.createElement('li');
+        listItem.innerText = item;
+        
+        list.appendChild(listItem);
+      }
+      list.removeChild(list.lastChild);
+      list.removeChild(list.lastChild);      
+
+      let highlights = ['Highlight 1', 'Highlight 2', 'Highlight 3'];
+
+      for (let index in highlights) {
+        let h3 = highlights[index];
+        let highlight = document.createElement('h3');
+        highlight.innerText = h3;
+        highlight.className = 'description';
+        
+        main.appendChild(highlight);
+      }
+      
+      let sectionLeftRemove = document.querySelector('.left-content');
+      main.removeChild(sectionLeftRemove);
+    </script>
+  </body>
+</html>
